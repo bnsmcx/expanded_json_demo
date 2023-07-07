@@ -198,7 +198,15 @@
                 <tr>
                     <td>
                         <details>
-                            <summary><b>insightIdentity:</b> {{.InsightIdentity}}</summary>
+                            <summary><b>insightIdentity:</b></summary>
+                            <details>
+                                <summary><b>insightIdentity: </b> {{.InsightIdentity.Id}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>readableId: </b> {{.InsightIdentity.ReadableId}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
                         </details>
                     </td>
                 </tr>
