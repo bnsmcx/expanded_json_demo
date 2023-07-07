@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <style>
-        .main {
-            margin: auto;
-            width: 500px;
-            border-radius: 10px;
-            border: 3px solid black;
-            box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
-            background-color: rgba(227, 240, 246, 1);
-            padding: 1.3rem;
-        }
-        body {
-            background-color: darkgrey;
-        }
-        p {
-            margin-left: 1.3rem;
-        }
-        details {
-            margin-left: 1.3rem;
-            padding: 5px 10px;
-        }
-        details[open] {
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
-        }
-        summary:hover {
-            cursor: pointer;
-            color: rgba(133, 0, 0, 1);
-        }
-    </style>
-</head>
+<html lang="en">
+    <head>
+        <title>cse display demo</title>
+        <meta charset="UTF-8">
+        <style>
+            .main {
+                margin: auto;
+                width: 500px;
+                border-radius: 10px;
+                border: 3px solid black;
+                box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+                background-color: rgba(227, 240, 246, 1);
+                padding: 1.3rem;
+            }
+            body {
+                background-color: darkgrey;
+            }
+            p {
+                margin-left: 1.3rem;
+            }
+            details > summary {
+                list-style: none;
+            }
+            details > summary::-webkit-details-marker {  /* Remove default arrow in Chrome */
+                display: none;
+            }
+            details {
+                margin-left: 1.3rem;
+                padding: 5px 10px;
+            }
+            details[open] {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+            }
+            summary:hover {
+                cursor: pointer;
+                color: rgba(133, 0, 0, 1);
+            }
+        </style>
+    </head>
     <body>
         <div class="main">
             <table>
@@ -76,7 +84,7 @@
                 <tr>
                     <td>
                         <details>
-                            <summary><b>insight:</b></summary>
+                            <summary><b>insight: {...}</b></summary>
                             <details>
                                 <summary><b>confidence: </b> {{.Insight.Confidence}}</summary>
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
@@ -130,7 +138,7 @@
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                             </details>
                             <details>
-                                <summary><b>signals: </b></summary>
+                                <summary><b>signals: {...}</b></summary>
                                 {{range $i, $v := .Insight.Signals}}
                                     <details>
                                         <summary><b>{{$i}} </b></summary>
@@ -179,7 +187,7 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 {{range $v.SuppressedReasons}}
                                                 <li>{{.}}</li>
@@ -188,7 +196,7 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 {{range $v.Tags}}
                                                 <li>{{.}}</li>
@@ -212,7 +220,12 @@
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                             </details>
                             <details>
-                                <summary><b>tags: </b> {{.Insight.Tags}}</summary>
+                                <summary><b>tags: {...}</b></summary>
+                                <ul>
+                                    {{range .Insight.Tags}}
+                                    <li>{{.}}</li>
+                                    {{end}}
+                                </ul>
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                             </details>
                             <details>
@@ -229,7 +242,7 @@
                 <tr>
                     <td>
                         <details>
-                            <summary><b>insightIdentity:</b></summary>
+                            <summary><b>insightIdentity: {...}</b></summary>
                             <details>
                                 <summary><b>insightIdentity: </b> {{.InsightIdentity.Id}}</summary>
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>

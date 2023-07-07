@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <style>
-        .main {
-            margin: auto;
-            width: 500px;
-            border-radius: 10px;
-            border: 3px solid black;
-            box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
-            background-color: rgba(227, 240, 246, 1);
-            padding: 1.3rem;
-        }
-        body {
-            background-color: darkgrey;
-        }
-        p {
-            margin-left: 1.3rem;
-        }
-        details {
-            margin-left: 1.3rem;
-            padding: 5px 10px;
-        }
-        details[open] {
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
-        }
-        summary:hover {
-            cursor: pointer;
-            color: rgba(133, 0, 0, 1);
-        }
-    </style>
-</head>
+<html lang="en">
+    <head>
+        <title>cse display demo</title>
+        <meta charset="UTF-8">
+        <style>
+            .main {
+                margin: auto;
+                width: 500px;
+                border-radius: 10px;
+                border: 3px solid black;
+                box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+                background-color: rgba(227, 240, 246, 1);
+                padding: 1.3rem;
+            }
+            body {
+                background-color: darkgrey;
+            }
+            p {
+                margin-left: 1.3rem;
+            }
+            details > summary {
+                list-style: none;
+            }
+            details > summary::-webkit-details-marker {   
+                display: none;
+            }
+            details {
+                margin-left: 1.3rem;
+                padding: 5px 10px;
+            }
+            details[open] {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+            }
+            summary:hover {
+                cursor: pointer;
+                color: rgba(133, 0, 0, 1);
+            }
+        </style>
+    </head>
     <body>
         <div class="main">
             <table>
@@ -76,7 +84,7 @@
                 <tr>
                     <td>
                         <details>
-                            <summary><b>insight:</b></summary>
+                            <summary><b>insight: {...}</b></summary>
                             <details>
                                 <summary><b>confidence: </b> 0.05</summary>
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
@@ -130,7 +138,7 @@
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                             </details>
                             <details>
-                                <summary><b>signals: </b></summary>
+                                <summary><b>signals: {...}</b></summary>
                                 
                                     <details>
                                         <summary><b>0 </b></summary>
@@ -179,14 +187,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -261,14 +269,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -343,14 +351,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -425,14 +433,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -507,14 +515,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -589,14 +597,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -685,14 +693,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -767,14 +775,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -863,14 +871,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -945,14 +953,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1041,14 +1049,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1123,14 +1131,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1209,14 +1217,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
@@ -1275,14 +1283,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1357,14 +1365,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1439,14 +1447,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1521,14 +1529,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1617,14 +1625,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1699,14 +1707,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1795,14 +1803,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0001</li>
@@ -1877,14 +1885,14 @@
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>suppressedReasons: </b></summary>
+                                            <summary><b>suppressedReasons: {...}</b></summary>
                                             <ul>
                                                 
                                             </ul>
                                             <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                                         </details>
                                         <details>
-                                            <summary><b>tags: </b></summary>
+                                            <summary><b>tags: {...}</b></summary>
                                             <ul>
                                                 
                                                 <li>_mitreAttackTactic:TA0006</li>
@@ -1922,7 +1930,48 @@
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                             </details>
                             <details>
-                                <summary><b>tags: </b> [_mitreAttackTactic:TA0001 _mitreAttackTactic:TA0003 _mitreAttackTactic:TA0004 _mitreAttackTactic:TA0005 _mitreAttackTactic:TA0006 _mitreAttackTactic:TA0008 _mitreAttackTactic:TA0042 _mitreAttackTechnique:T1078 _mitreAttackTechnique:T1078.001 _mitreAttackTechnique:T1078.002 _mitreAttackTechnique:T1078.003 _mitreAttackTechnique:T1078.004 _mitreAttackTechnique:T1110 _mitreAttackTechnique:T1110.001 _mitreAttackTechnique:T1110.002 _mitreAttackTechnique:T1110.003 _mitreAttackTechnique:T1586 _mitreAttackTechnique:T1586.001 _mitreAttackTechnique:T1586.002]</summary>
+                                <summary><b>tags: {...}</b></summary>
+                                <ul>
+                                    
+                                    <li>_mitreAttackTactic:TA0001</li>
+                                    
+                                    <li>_mitreAttackTactic:TA0003</li>
+                                    
+                                    <li>_mitreAttackTactic:TA0004</li>
+                                    
+                                    <li>_mitreAttackTactic:TA0005</li>
+                                    
+                                    <li>_mitreAttackTactic:TA0006</li>
+                                    
+                                    <li>_mitreAttackTactic:TA0008</li>
+                                    
+                                    <li>_mitreAttackTactic:TA0042</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1078</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1078.001</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1078.002</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1078.003</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1078.004</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1110</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1110.001</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1110.002</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1110.003</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1586</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1586.001</li>
+                                    
+                                    <li>_mitreAttackTechnique:T1586.002</li>
+                                    
+                                </ul>
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
                             </details>
                             <details>
@@ -1939,7 +1988,7 @@
                 <tr>
                     <td>
                         <details>
-                            <summary><b>insightIdentity:</b></summary>
+                            <summary><b>insightIdentity: {...}</b></summary>
                             <details>
                                 <summary><b>insightIdentity: </b> f8d8afec-578b-3775-bed4-9d1a28cd7d6b</summary>
                                 <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
