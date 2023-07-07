@@ -1,18 +1,37 @@
-<html lang="en">
+<!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
     <style>
-        div {
-            margin-left: auto;
-            margin-right: auto;
+        .main {
+            margin: auto;
             width: 500px;
+            border-radius: 10px;
+            border: 3px solid black;
+            box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+            background-color: rgba(227, 240, 246, 1);
+            padding: 1.3rem;
+        }
+        body {
+            background-color: darkgrey;
+        }
+        p {
+            margin-left: 1.3rem;
         }
         details {
-            margin-left: 20px;
+            margin-left: 1.3rem;
+            padding: 5px 10px;
+        }
+        details[open] {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+        }
+        summary:hover {
+            cursor: pointer;
+            color: rgba(133, 0, 0, 1);
         }
     </style>
 </head>
     <body>
-        <div>
+        <div class="main">
             <table>
                 <tr>
                     <td>
