@@ -1,8 +1,217 @@
-<html>
-<div>
-    <pre>
-        {{.}}
-    </pre>
-</div>
+<html lang="en">
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <details>
+                            <summary><b>accountId:</b> {{.AccountId}}</summary>
+                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <details>
+                            <summary><b>eventFormatVersion:</b> {{.EventFormatVersion}}</summary>
+                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <details>
+                            <summary><b>eventId:</b> {{.EventId}}</summary>
+                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <details>
+                            <summary><b>eventName:</b> {{.EventName}}</summary>
+                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <details>
+                            <summary><b>eventtime:</b> {{.EventTime}}</summary>
+                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <details>
+                            <summary><b>insight:</b></summary>
+                            <details>
+                                <summary><b>confidence: </b> {{.Insight.Confidence}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>created: </b> {{.Insight.Created}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>description: </b> {{.Insight.Description}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>entityId: </b> {{.Insight.EntityId}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>entitySensorZone: </b> {{.Insight.EntitySensorZone}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>entityType: </b> {{.Insight.EntityType}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>entityValue: </b> {{.Insight.EntityValue}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>id: </b> {{.Insight.Id}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>name: </b> {{.Insight.Name}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>readableId: </b> {{.Insight.ReadableId}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>riskScore: </b> {{.Insight.RiskScore}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>severity: </b> {{.Insight.Severity}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>severityName: </b> {{.Insight.SeverityName}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>signals: </b></summary>
+                                {{range $i, $v := .Insight.Signals}}
+                                    <details>
+                                        <summary><b>{{$i}} </b></summary>
+                                        <details>
+                                            <summary><b>contentType: </b>{{$v.ContentType}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>created: </b> {{$v.Created}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>description: </b> {{$v.Description}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>entityId: </b> {{$v.EntityId}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>id: </b> {{$v.Id}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>name: </b> {{$v.Name}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>prototype: </b> {{$v.Prototype}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>ruleId: </b> {{$v.RuleId}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>ruleName: </b> {{$v.RuleName}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>severity: </b> {{$v.Severity}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>summary: </b> {{$v.Summary}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>suppressedReasons: </b></summary>
+                                            <ul>
+                                                {{range $v.SuppressedReasons}}
+                                                <li>{{.}}</li>
+                                                {{end}}
+                                            </ul>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>tags: </b></summary>
+                                            <ul>
+                                                {{range $v.Tags}}
+                                                <li>{{.}}</li>
+                                                {{end}}
+                                            </ul>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                        <details>
+                                            <summary><b>timestamp: </b> {{$v.Timestamp}}</summary>
+                                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                                        </details>
+                                    </details>
+                                {{end}}
+                            </details>
+                            <details>
+                                <summary><b>source: </b> {{.Insight.Source}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>status: </b> {{.Insight.Status}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>tags: </b> {{.Insight.Tags}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>timeToDetection: </b> {{.Insight.TimeToDetection}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                            <details>
+                                <summary><b>timestamp: </b> {{.Insight.Timestamp}}</summary>
+                                <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                            </details>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <details>
+                            <summary><b>insightIdentity:</b> {{.InsightIdentity}}</summary>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <details>
+                            <summary><b>subsystem:</b> {{.Subsystem}}</summary>
+                            <p>You can't drill any deeper, perhaps link a knowledge base article?</p>
+                        </details>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
 </html>
 
