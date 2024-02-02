@@ -26,5 +26,5 @@ jobs:
 
       - name: Deploy Aerie
         run: |
-          gh workflow run -R bnsmcx/advent-of-code deploy --ref main 
+          gh workflow run -R bnsmcx/advent-of-code deploy.yml --ref main 
         
