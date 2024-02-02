@@ -1,0 +1,30 @@
+name: Deploy to staging
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Terragrunt
+        run: echo "Create something from nothing..."
+
+      - name: Run Ansible
+        run: echo "Configure all the things..."
+
+      - name: Authenticate with GitHub CLI
+        run: |
+          echo ${{ secrets.TEST_PAT }} | gh auth login --with-token
+
+      - name: Deploy Aerie
+        run: |
+          gh workflow run -R bnsmcx/advent-of-code deploy --ref main 
+        
